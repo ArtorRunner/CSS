@@ -1,0 +1,47 @@
+html, body, .grid-container { 
+	height: 100%;
+	margin-top: 0.5%;
+	margin-left: 12%;
+	margin-right: 9%;
+	margin-bottom: 0.5%;
+	}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.5% 30% 54%;
+  grid-template-rows: 28% 4% 17% 4% 25% 4% 17%;
+  gap: 0px 0px;
+  grid-template-areas:
+    "zone Image InfoName"
+    "zone Contact MyInfo"
+    "zone InfoContact MyInfo"
+    "zone Skills MyInfo"
+    "zone InfoSkills MyInfo"
+	"zone Hobbies MyInfo"
+	"zone InfoHobbies MyInfo";
+}
+
+.Zone {grid-area: zone;}
+
+.Image { grid-area: Image;}
+
+.InfoName {grid-area: InfoName;}
+
+.Contact { grid-area: Contact;}
+
+.InfoContact { grid-area: InfoContact;}
+
+.Skills { grid-area: Skills;}
+
+.InfoSkills { grid-area: InfoSkills;}
+
+.MyInfo { grid-area: MyInfo;}
+
+.Hobbies { grid-area: Hobbies;}
+
+.InfoHobbies {grid-area: InfoHobbies;}
+
+.grid-container * {
+  border: 1px solid red;
+  position: relative;
+}
